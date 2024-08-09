@@ -10,6 +10,7 @@
   --grey-color: #616161;
   --blue-color: #0336ff;
   --red-color: #b71c1c;
+  --pink-color: #ff0c88;
 
   /* Brand Colors */
   --primary-color: var(--blue-color);
@@ -41,12 +42,20 @@
   --spacing-3: 2.5rem;
   --spacing-4: 3rem;
   --spacing-5: 4rem;
+
+  /* Header Height */
+  --header-height: 4.5rem;
+
+  /* Box Shadow */
+  --box-shadow-1: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --box-shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 body {
   font-family: var(--body-font);
   color: var(--black-color);
   font-size: var(--font-size-5);
+  margin-top: var(--header-height);
 }
 
 .font-weight-light {
@@ -87,7 +96,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-weight-black);
-  height: 4.5rem;
+  height: var(--header-height);
 }
 
 .nav__logo {
@@ -119,11 +128,83 @@ body {
 
 .active-link::after,
 .nav__link:hover::after {
-  background-color: var(--primary-color);
+  background-color: var(--info-color);
   height: 0.18rem;
   content: '';
   width: 100%;
   position: absolute;
   left: 0;
   top: 1.7rem;
+  border-radius: 2rem;
+}
+
+/* Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-5) 0;
+}
+
+.home__title {
+  font-size: var(--font-size-2);
+  line-height: calc(var(--font-size-2) * 1.4);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-3);
+}
+
+.home__title-color {
+  color: var(--primary-color);
+}
+
+.home__img {
+  border-radius: 2rem;
+  width: 480px;
+}
+
+.home__social {
+  margin-top: var(--spacing-3);
+  display: flex;
+  column-gap: var(--spacing-1);
+}
+
+.home__social-icon1 {
+  font-size: 1.5rem;
+}
+
+.home__social-icon2 {
+  font-size: 1.5rem;
+}
+
+.home__social-icon3 {
+  font-size: 1.5rem;
+}
+
+.home__social-icon1:hover {
+  font-size: 1.5rem;
+  color: var(--red-color);
+}
+
+.home__social-icon2:hover {
+  font-size: 1.5rem;
+  color: var(--pink-color);
+}
+
+.home__social-icon3:hover {
+  font-size: 1.5rem;
+  color: var(--positive-color);
+}
+
+/* Contact Button */
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  font-weight: var(--font-weight-bold);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: var(--box-shadow-2);
 }
