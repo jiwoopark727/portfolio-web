@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>박지우의 포트폴리오</title>
+    <title>박지우 포트폴리오</title>
   </head>
   <body>
     <header class="header">
@@ -24,7 +24,7 @@
         <!-- 이미지(로고) -->
         <div class="nav__logo">
           <img class="nav__img" src="/image/logo.png" alt="로고 이미지" />
-          <a href="#" class="nav__brand">박지우의 포트폴리오</a>
+          <a href="#" class="nav__brand">박지우 포트폴리오</a>
         </div>
 
         <!-- 메뉴 -->
@@ -51,45 +51,48 @@
     </header>
     <main>
       <!-- Home -->
-      <section id="home">
+      <section class="home container" id="home">
         <!-- Home Data -->
-        <div>
-          <h2>
+        <div class="home__data">
+          <h2 class="home__title">
             안녕하세요! <br />
-            <strong>웹 프론트엔드 개발자</strong> <br />
-            <strong>박지우</strong>입니다!
+            <strong class="home__title-color">웹 프론트엔드 개발자</strong>
+            <br />
+            <strong class="home__title-color">박지우</strong>입니다!
           </h2>
 
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="button">Contact</a>
 
-          <div>
+          <div class="home__social">
             <a
               href="https://www.youtube.com/@user-df1qw1ci8k"
               target="_blank"
               title="박지우 유튜브 링크"
             >
-              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-youtube home__social-icon1"></i>
             </a>
             <a
               href="https://www.instagram.com/qkrvvldn"
               target="_blank"
               title="박지우 인스타그램 링크"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram home__social-icon2"></i>
             </a>
             <a
               href="https://github.com/jiwoopark727"
               target="_blank"
               title="박지우 깃헙 링크"
             >
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github home__social-icon3"></i>
             </a>
           </div>
         </div>
         <!-- Home Image -->
-        <div>
-          <img src="/image/home/profile.jpg" alt="박지우 프로필 이미지" />
-        </div>
+        <img
+          class="home__img"
+          src="/image/home/profile.jpg"
+          alt="박지우 프로필 이미지"
+        />
       </section>
 
       <!-- About -->
