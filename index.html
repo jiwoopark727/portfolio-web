@@ -51,7 +51,7 @@
     </header>
     <main>
       <!-- Home -->
-      <section class="home container" id="home">
+      <section class="home container section" id="home">
         <!-- Home Data -->
         <div class="home__data">
           <h2 class="home__title">
@@ -96,16 +96,23 @@
       </section>
 
       <!-- About -->
-      <section id="about">
-        <h2>About</h2>
-        <div>
+      <section class="about section bg-grey-1" id="about">
+        <h2 class="section__title">About</h2>
+
+        <div class="about__container container">
+          <!-- 이미지 -->
           <div>
-            <img src="/image/about/about.jpg" alt="박지우 어바웃 이미지" />
+            <img
+              class="about__img"
+              src="/image/about/about.jpg"
+              alt="박지우 어바웃 이미지"
+            />
           </div>
 
-          <div>
-            <h3>저는 이렇게 답합니다</h3>
-            <p>
+          <!-- 문자열 -->
+          <div class="about__data">
+            <h3 class="about__subtitle">저는 이렇게 답합니다</h3>
+            <p class="about__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               sint maiores et, quo voluptatem natus ipsum debitis reiciendis
               quaerat temporibus cupiditate nesciunt ad aliquam labore. Iure,
@@ -116,8 +123,8 @@
       </section>
 
       <!-- Skills -->
-      <section id="skills">
-        <h2>Skills</h2>
+      <section class="section" id="skills">
+        <h2 class="section__title">Skills</h2>
         <div>
           <!-- 스킬 데이터 -->
           <div>
@@ -195,8 +202,8 @@
       </section>
 
       <!-- Work -->
-      <section id="work">
-        <h2>Work</h2>
+      <section class="section" id="work">
+        <h2 class="section__title">Work</h2>
         <div>
           <a
             href="https://github.com/jiwoopark727/blog"
@@ -271,8 +278,8 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2>
         <div>
           <form action="">
             <input type="text" name="name" placeholder="이름" required />
