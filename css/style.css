@@ -11,6 +11,7 @@
   --blue-color: #0336ff;
   --red-color: #b71c1c;
   --pink-color: #ff0c88;
+  --orange-color: #ff6d0a;
 
   /* Brand Colors */
   --primary-color: var(--blue-color);
@@ -258,5 +259,93 @@ body {
 
 .about__img {
   max-width: 310px;
+  border-radius: 0.5rem;
+}
+
+/* Skills */
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  align-items: center;
+}
+
+.skills__subtitle {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-1);
+}
+
+.skills__text {
+  line-height: 1.4rem;
+}
+
+.skills__data {
+  box-shadow: var(--box-shadow-1);
+  border-radius: 0.3rem;
+  margin-top: var(--spacing-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.8rem 1rem;
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  cursor: default;
+}
+
+.skills__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  appearance: none;
+  height: 6px;
+  width: 100%;
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+
+.skills__icon1 {
+  font-size: var(--font-size-4);
+  margin-right: var(--spacing-4);
+  color: var(--orange-color);
+}
+
+.skills__icon2 {
+  font-size: var(--font-size-4);
+  margin-right: var(--spacing-4);
+  color: var(--primary-color);
+}
+
+.skills__icon3 {
+  font-size: var(--font-size-4);
+  margin-right: var(--spacing-4);
+  color: var(--warning-color);
+}
+
+.skills__icon4 {
+  font-size: var(--font-size-4);
+  margin-right: var(--spacing-4);
+  color: var(--info-color);
+}
+
+.skills__progress::-webkit-progress-bar {
+  background: var(--white-color);
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills__progress::-webkit-progress-value {
+  background: var(--primary-color);
+  border-radius: 12px;
+  width: 48px;
+}
+
+.skills__img {
+  width: 100%;
   border-radius: 0.5rem;
 }
