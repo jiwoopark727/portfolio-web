@@ -52,6 +52,10 @@
   --box-shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
   color: var(--black-color);

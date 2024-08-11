@@ -3,6 +3,16 @@ function toggleMenu() {
   $navMenu.classList.toggle('show');
 }
 
+function handleFloatingButton() {
+  const $floatingButton = document.getElementById('floating-button');
+  $floatingButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth', 스타일.css에다가 html 전체에 적용함
+    });
+  });
+}
+
 function init() {
   const $navToggle = document.getElementById('nav-toggle');
   $navToggle.addEventListener('click', () => {
@@ -16,6 +26,8 @@ function init() {
       toggleMenu();
     }),
   );
+
+  handleFloatingButton();
 }
 
 init();
