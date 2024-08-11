@@ -259,13 +259,14 @@ body {
 }
 
 .about__subtitle {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 }
 
 .about__text {
-  line-height: 1.4rem;
+  line-height: 2.3rem;
+  font-size: var(--font-size-5);
 }
 
 .about__img {
@@ -288,7 +289,7 @@ body {
 }
 
 .skills__text {
-  line-height: 1.4rem;
+  line-height: 1.9rem;
 }
 
 .skills__data {
