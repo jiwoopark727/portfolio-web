@@ -81,5 +81,5 @@ typeit
   .type('<strong class="home__title-color">웹 프론트엔드 개발자</strong><br/>')
   // .type('<strong class="home__title-color">PARK JIWOO</strong>')
   // .delete(10, { delay: 300 })
-  .type('<strong class="home__title-color">박지우</strong>입니다!')
+  .type('<strong class="home__title-color">박지우</strong>입니다')
   .go();
