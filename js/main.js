@@ -42,3 +42,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const $sectionList = document.querySelectorAll('.section');
 $sectionList.forEach((el) => observer.observe(el));
+
+// ScrollReveal
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 1500,
+  delay: 200,
+});
+scrollReveal.reveal(
+  '.home__data, .about__img, .skills__subtitle, .skills__text, .section__title',
+);
+scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
+scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
+  interval: 200,
+});
